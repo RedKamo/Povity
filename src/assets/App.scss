@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+//import component style
+
+
+
+
+//@font-family
+$primary-font: 'Roboto', sans-serif;
+$title-font: 'Open Sans', sans-serif;
+
+//@font-color title
+$font-secondary: #fff;
+$title-forms: #7b4daf;
+
+//@border-colors
+$border-light: #EBEBEB;
+$border-green: #2FFEA4;
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: $primary-font;
+}
+
+:global{
+  .react-icons{
+    background-color: red;
+  }
+}

@@ -1,1 +1,1 @@
-# PomoApp
+# Povity (Best Pomodoro App)

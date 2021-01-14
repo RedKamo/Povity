@@ -3,7 +3,8 @@
 .sidebar{
   width: 210px;
   height: 89vh;
-  border-right: 2px solid  $border-light;
+  //border-right: 2px solid  $border-light;
+  border: 1px solid blue;
 
   &__container{
     //border: 1px solid red;

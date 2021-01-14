@@ -1,8 +1,13 @@
 import React from 'react';
 
+ import '../assets/styles/Projects.scss';
+
+
 const Projects =()=>{
     return(
-        <div>WHITE CONTENT MAIN </div>
+        <div className="projects__container">
+            <h1>PROJECTS Today</h1>
+        </div>
     )
 }
 

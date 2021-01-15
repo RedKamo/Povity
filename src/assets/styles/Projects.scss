@@ -1,11 +1,75 @@
 @import "../App.scss";
 
-.projects__container{
+//440x36
+
+.projects{
   width: 100%;
   height: 100%;
-  border: 1px solid greenyellow;
+  //text-align: center;
+  border: 1px solid red;
 
   h1{
-    color: red;
+    margin-left: 1em;
+  }
+
+  &__add{
+    //border: 1px solid red;
+    margin-top: 3.5em;
+    display: flex;
+    align-items: center;
+  
+    input {
+    margin-left: 2em;
+    width: 550px;
+    height: 35px;
+    border-radius: $round-border;
+    border: 1px solid $border-light ;
+    }
+    input::placeholder{
+      padding-left: 1.5em;
+    }
+
+    button{
+      margin-left: 1em;
+      cursor: pointer;
+      width: 100px;
+      height: 35px;
+      border-radius: $round-border;
+      border: 1px solid $border-light ;
+      background-color: $border-green;
+    }
+  }
+
+  &__activities{
+    margin-left: 2em;
+    display: flex;
+    align-items: center;
+    p{
+      display: flex;
+      padding-left: 1em;
+      align-items: center;
+      border-radius: $round-border;
+      border: 1px solid $border-light ;
+      width: 550px;
+      height: 35px;
+
+    }
+
+  &--drop{
+    margin-left: 1em;
+    display: flex;
+    width: 50px;
+    height: 35px;
+    justify-items: center;
+    border-radius: $round-border;
+    border: 1px solid $border-light ;
+    align-items: center;
+    //border: 1px solid hotpink;
+    }
+  
+  &--arrows{
+    display: flex;
+    flex-direction: column;
+  }
   }
 }

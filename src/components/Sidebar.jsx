@@ -25,7 +25,7 @@ const Sidebar =()=>{
           <div className="sidebar__container__footer">
             <ul>
               <li className="today">Add new project <FaPlus /></li>
-              <li className="set">Settings <RiSettings5Fill /> </li>
+              <li className="set">Settings <RiSettings5Fill /></li>
             </ul>
           </div>
         </div>

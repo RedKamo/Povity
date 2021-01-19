@@ -15,7 +15,7 @@ const Sidebar =()=>{
         <div className="sidebar__container">
           <div className="sidebar__container__menu">
             <ul>
-              <li className="today"><Link to="/today"> Today Task <FaArrowRight /></Link></li>
+              <li className="today"><Link to="/today"> Today Task </Link></li>
               <li>React Project</li>
               <li>Angular Project</li>
               <li>Github OpenSource Project</li>

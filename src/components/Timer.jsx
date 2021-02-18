@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 
 
@@ -27,35 +27,55 @@ const Timer =()=> {
     }
   }
 
+  useEffect(()=>{
+    if(timer < 1  ){
+      clearInterval(countRef.current)
+      setisActive(false)
+    }
+  }, [timer])
+
+
+
   const handleStop = ()=> {
     clearInterval(countRef.current)
     setisActive(false)
-    setTimer(25)
+    setTimer(0)
   }
 
   const handleDecrease = ()=>{
-    setTimer(timer -1 )
+    setTimer(timer -60 )
   }
 
   const handleIncrease = ()=>{
-    setTimer(timer + 1)
+    setTimer(timer + 60)
   }
 
+// Para darle formato al timer {00:00}
+  const ChangeTimer = ()=>{
+    const seconds = `0${timer % 60}`.slice(-2)
+    const minutes = `${Math.floor(timer / 60)}`
+    const getMinutes = `0${minutes % 60}`.slice(-2)
+
+    return `${getMinutes}: ${seconds}`
+  }
 
   return(
     <div className="timer">
       <div className="timer__pomodoro">
-        <button onClick={handleDecrease}> - </button>
-          {}
-          <p>{timer}</p>
-          {/* <h1 className="timer__pomodoro__clock">25:00</h1> */}
+        <div className="timer__pomodoro__clock">
+          <button onClick={handleDecrease}> - </button>
+          <p className="timer__pomodoro__clock--time">{ChangeTimer()}</p>
           <button onClick={handleIncrease}> + </button>
-        <div className="timer__pomodoro__icons">
-         
         </div>
+        
+          {}
+          {/* <h1 className="timer__pomodoro__clock">25:00</h1> */}
+        {/* <div className="timer__pomodoro__icons">
+         
+        </div> */}
         <div className="timer__pomodoro__buttons">
-          <button onClick={handlePlay}>start</button>
-          <button onClick={handleStop}>pause</button>
+          <button onClick={handlePlay}>{isActive ? "Pause" : "Start" }</button>
+          <button onClick={handleStop}> Reset </button>
          {/*  <button>Pomodoro</button>
           <button>Short break</button>
           <button>Long break</button> */}

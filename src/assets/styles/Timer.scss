@@ -12,7 +12,7 @@
     margin-top: 2em;
     width: 370px;
     height: 250px;
-    border: 1px solid red;
+    border: 1px solid blue;
     border-radius: $round-border;
     border: 3px solid $border-light ;
     display: flex;
@@ -20,20 +20,38 @@
     align-items: center;
     justify-content: center;
     //justify-content: space-between;
-  
+
+
     &__clock{
+      display: flex;
+      align-items: center;
       font-size: 5em;
       color: $pomodoro;
       font-weight: 300;
       margin: 0;
+
+      p{
+        margin: 0.2em;
+        color: $border-green;
+      }
+
+      button{
+        border: 2px solid $border-green;
+        border-radius: 30px;
+        width: 40px;
+        height: 40px;
+        background-color: whitesmoke;
+      }
+      
     }
-  
+  /* 
     &__icons{
       cursor: pointer;
       margin: 1em 0 2em;
       color: $pomodoro;
+      border: 1px solid red;
     }
-
+ */
     &__buttons{
       //border: 1px solid red;
       display: flex;

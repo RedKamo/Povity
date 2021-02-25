@@ -6,7 +6,7 @@ import { RiSettings5Fill } from 'react-icons/ri';
 
 import { Link, BrowserRouter, Route } from 'react-router-dom';
 //import Today from '../components/Today';
-import Today from './Today';
+import Today from '../components/TodayContainer/Today'
 
 const Sidebar =()=>{
   return(

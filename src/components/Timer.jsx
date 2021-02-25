@@ -56,7 +56,7 @@ const Timer =()=> {
     const minutes = `${Math.floor(timer / 60)}`
     const getMinutes = `0${minutes % 60}`.slice(-2)
 
-    return `${getMinutes}: ${seconds}`
+    return `${getMinutes}: ${seconds}`    
   }
 
   return(

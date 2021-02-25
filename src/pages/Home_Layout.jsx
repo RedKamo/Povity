@@ -3,6 +3,8 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import Projects from '../components/Projects';
 import Timer from '../components/Timer';
+//import Today from '../components/TodayContainer/Today';
+import Today from '../components/TodayContainer/Today';
 
 //styles
 
@@ -12,7 +14,8 @@ const Home_Layout =()=>{
   return(
     <div className="home__container">
       <Sidebar/>
-      <Projects/>
+      {/* <Projects/> */}
+      <Today/>
       <Timer/>
     </div>
   )

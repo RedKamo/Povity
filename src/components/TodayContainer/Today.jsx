@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 //import '../assets/styles/Today.scss';
 import '../../assets/styles/Today.scss';
@@ -11,19 +11,19 @@ import TaskList from './TaskList';
 
 const Today =()=>{
 
-	const [taskList, setTaskList] = useState([]);
+	const [list, setList] = useState([]);
 
 	const handleAddItem = addItem =>{
-		setTaskList([...taskList, addItem])
+		setList([...list, addItem])
 	};
 
-    return(
-        <div className="container">
-          <InputTask handleAddItem={handleAddItem} />
-					<TaskList taskList={taskList} setTaskList={setTaskList} />  
+  return(
+    <div className="container">
+      <InputTask handleAddItem={handleAddItem} />
+		  <TaskList list={list} setList={setList} />  
             {/* <h1>Today task input container</h1>
             <input type="text" placeholder="Add your task here... " /> */}
-        </div>
+    </div>
     )
 }
 

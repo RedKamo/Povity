@@ -1,0 +1,12 @@
+@import "../App.scss";
+
+.checklist{
+	//border: 1ps solid blue;
+	display: flex;
+	align-items: center;
+	width: 620px;
+	height: 35px;
+	border-radius: $round-border;
+	border: 1px solid $border-light ;
+	margin: 1.5em 0 1em 3.2em;
+}

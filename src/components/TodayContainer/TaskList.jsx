@@ -31,7 +31,7 @@ const TaskList = props => {
 
   return(
     <div className="todo">
-      {list.length ? check : <h2>Right now we dont have any task</h2>}
+      {list.length ? check : <h2 className="todo__title">Right now you dont have any task</h2>}
       {list.length ? (
       
           <button className="list_button" onClick={onClickRemoveItem}>
